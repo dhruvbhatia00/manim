@@ -1,6 +1,8 @@
 \documentclass[preview]{standalone}
 
 \usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{dsfont}
@@ -15,8 +17,12 @@
 \usepackage{physics}
 \usepackage{xcolor}
 \usepackage{microtype}
-%\DisableLigatures{encoding = *, family = * }
-\usepackage[UTF8]{ctex}
+\DisableLigatures{encoding = *, family = * }
+%\usepackage[UTF8]{ctex}
+
+\usepackage[osf]{mathpazo}
+\usepackage{cancel}
+
 \linespread{1}
 \usepackage{pgfplots}
 \usepackage{circuitikz}
@@ -38,15 +44,15 @@
 \usetikzlibrary{topaths}
 \usetikzlibrary{babel}
 \usetikzlibrary{cd}
-\tikzset{ commutative diagrams/.cd, arrow style=tikz, diagrams={line width=2pt}}
 \newenvironment{cd}{%
   \begin{tikzcd}[ampersand replacement =\&]
 }{%
   \end{tikzcd}
 }
 
+
 \begin{document}
 
-YourTextHere
+$\cancel{A}$
 
 \end{document}
